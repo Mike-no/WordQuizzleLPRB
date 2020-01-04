@@ -1,0 +1,72 @@
+{
+  "graph": {
+    " ": {
+      "player": {
+        "username": " ",
+        "psw": " ",
+        "score": 0
+      },
+      "adjacencyList": []
+    },
+    "Maxim": {
+      "player": {
+        "username": "Maxim",
+        "psw": "enumerazione",
+        "score": 0
+      },
+      "adjacencyList": [
+        {
+          "username": "Michael",
+          "psw": "alfabeto",
+          "score": 0
+        }
+      ]
+    },
+    "ddded": {
+      "player": {
+        "username": "ddded",
+        "psw": "aa",
+        "score": 0
+      },
+      "adjacencyList": []
+    },
+    "Kairi": {
+      "player": {
+        "username": "Kairi",
+        "psw": "oliarco",
+        "score": 0
+      },
+      "adjacencyList": []
+    },
+    "Michael": {
+      "player": {
+        "username": "Michael",
+        "psw": "alfabeto",
+        "score": 0
+      },
+      "adjacencyList": [
+        {
+          "username": "Maxim",
+          "psw": "enumerazione",
+          "score": 0
+        }
+      ]
+    },
+    "Ansem": {
+      "player": {
+        "username": "Ansem",
+        "psw": "KingdomHearts",
+        "score": 0
+      },
+      "adjacencyList": []
+    },
+    "Sora": {
+      "player": {
+        "username": "Sora",
+        "psw": "Keyblade",
+        "score": 0
+      },
+      "adjacencyList": []
+    }
+  }
+}
