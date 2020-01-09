@@ -80,7 +80,7 @@ attento
 attenzione
 attesa
 attimo
-attivit√†
+attivit‡
 atto
 attore
 attorno
@@ -89,7 +89,7 @@ attuale
 aumentare
 automobile
 autore
-autorit√†
+autorit‡
 avanti
 avanzare
 avere
@@ -129,7 +129,7 @@ buio
 buono
 buttare
 cadere
-caff√®
+caffË
 calcio
 caldo
 cambiare
@@ -169,18 +169,18 @@ chiave
 chiedere
 chiesa
 chilometro
-chiss√†
+chiss‡
 chiudere
 ci
 ciascuno
 cielo
-cio√®
+cioË
 circa
 cittadino
-citt√†
+citt‡
 civile
-civilt√†
-ci√≤
+civilt‡
+ciÚ
 classe
 collina
 collo
@@ -281,7 +281,7 @@ difendere
 difesa
 differenza
 difficile
-difficolt√†
+difficolt‡
 diffondere
 dimenticare
 dimostrare
@@ -360,7 +360,7 @@ estate
 estendere
 estero
 estremo
-et√†
+et‡
 europeo
 evitare
 fabbrica
@@ -390,7 +390,7 @@ figurare
 film
 filo
 finalmente
-finch√©
+finchÈ
 fine
 finestra
 finire
@@ -449,8 +449,8 @@ giugno
 giungere
 giustizia
 giusto
-gi√†
-gi√π
+gi‡
+gi˘
 godere
 governo
 grado
@@ -539,7 +539,7 @@ levare
 li
 liberare
 libero
-libert√†
+libert‡
 libro
 limitare
 limite
@@ -555,8 +555,8 @@ lui
 luna
 lungo
 luogo
-l√†
-l√¨
+l‡
+lÏ
 ma
 macchina
 madre
@@ -597,7 +597,7 @@ messa
 mestiere
 metro
 mettere
-met√†
+met‡
 mezzo
 mi
 migliore
@@ -637,7 +637,7 @@ nazione
 ne
 neanche
 necessario
-necessit√†
+necessit‡
 nemico
 nemmeno
 neppure
@@ -662,7 +662,7 @@ nulla
 numero
 numeroso
 nuovo
-n√©
+nÈ
 o
 occasione
 occhio
@@ -703,7 +703,7 @@ pagare
 pagina
 palazzo
 pane
-pap√†
+pap‡
 parecchio
 parere
 parete
@@ -728,8 +728,8 @@ pena
 pensare
 pensiero
 per
-perch√©
-perci√≤
+perchÈ
+perciÚ
 perdere
 perfetto
 perfino
@@ -740,7 +740,7 @@ permettere
 persona
 personaggio
 personale
-per√≤
+perÚ
 pesare
 peso
 pezzo
@@ -755,13 +755,13 @@ piccolo
 piede
 pieno
 pietra
-piet√†
+piet‡
 piuttosto
-pi√π
+pi˘
 poco
 poesia
 poeta
-poich√©
+poichÈ
 politica
 politico
 polizia
@@ -777,7 +777,7 @@ posare
 posizione
 possedere
 possibile
-possibilit√†
+possibilit‡
 posto
 potenza
 potere
@@ -838,7 +838,7 @@ qualche
 qualcosa
 qualcuno
 quale
-qualit√†
+qualit‡
 qualsiasi
 qualunque
 quanto
@@ -859,7 +859,7 @@ rapido
 rapporto
 rappresentare
 reale
-realt√†
+realt‡
 recare
 recente
 regione
@@ -981,7 +981,7 @@ sistema
 situazione
 smettere
 sociale
-societ√†
+societ‡
 soffrire
 sognare
 sogno
@@ -1052,7 +1052,7 @@ superiore
 svegliare
 sviluppo
 svolgere
-s√¨
+sÏ
 tacere
 tagliare
 tale
@@ -1105,7 +1105,7 @@ umano
 un
 unico
 unire
-universit√†
+universit‡
 uno
 uomo
 usare
@@ -1124,7 +1124,7 @@ venire
 vento
 veramente
 verde
-verit√†
+verit‡
 vero
 verso
 vestire
@@ -1148,7 +1148,7 @@ voi
 volare
 volere
 volgere
-volont√†
+volont‡
 volta
 voltare
 volto
