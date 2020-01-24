@@ -23,8 +23,6 @@ import java.io.IOException;
 public class JsonHandler {
 	private Gson gson;
 	
-	private static final String ENCODING  = "UTF-8";
-	
 	public JsonHandler() {
 		gson = new GsonBuilder().setPrettyPrinting().create();
 	}
@@ -62,7 +60,7 @@ public class JsonHandler {
 	 * @return map<String, String>
 	 * @throws NullPointerException : if json is null
 	 */
-	public Map<String, String> fromJson(String json) {
+	public synchronized Map<String, String> fromJson(String json) {
 		if(json == null)
 			throw new NullPointerException(ErrorMacro.NULL_ARG);
 		
@@ -87,12 +85,12 @@ public class JsonHandler {
 			throw new NullPointerException(ErrorMacro.NULL_ARGS);
 		
 		String jsonPorting = gson.toJson(graph);
-		byte[] tmpBuf = jsonPorting.getBytes(Charset.forName(ENCODING));
+		byte[] tmpBuf = jsonPorting.getBytes(Charset.forName(MyUtilities.ENCODING));
 		ByteBuffer buf = ByteBuffer.wrap(tmpBuf);
 		buf.put(tmpBuf);
 		buf.flip();
 		
-		try(FileChannel outChannel = FileChannel.open(path, StandardOpenOption.WRITE)){
+		try(FileChannel outChannel = FileChannel.open(path, StandardOpenOption.WRITE, StandardOpenOption.TRUNCATE_EXISTING)){
 			while(buf.hasRemaining())
 				outChannel.write(buf);
 		} catch (IOException ioe) {
@@ -122,7 +120,7 @@ public class JsonHandler {
 		buf.rewind();
 		byte[] tmpBuf = new byte[buf.remaining()];
 		buf.get(tmpBuf);
-		String jsonPorting = new String(tmpBuf, Charset.forName(ENCODING));
+		String jsonPorting = new String(tmpBuf, Charset.forName(MyUtilities.ENCODING));
 		
 		PlayerGraph graph = gson.fromJson(jsonPorting, PlayerGraph.class);
 		

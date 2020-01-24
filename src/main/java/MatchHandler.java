@@ -49,29 +49,18 @@ public class MatchHandler implements Runnable {
 	private int challengedIndex = 0;
 	private int challengedScore = 0;
 	
-	private static int UPD_CONTROL_PORT 	  = 8888; 
-	private static final int TIMEOUT		  = 60000;
-	private static final int BYTE_ARRAY_SIZE  = 512;
-	
 	public MatchHandler(String usr, String oppo, SocketChannel challengerSocket, 
 			SocketChannel challengedSocket, int oppoUdpPort, Selector oldSel, JsonHandler jsonHandler,
-			PlayerGraph playerGraph) {
-		this(usr, oppo, challengerSocket, challengedSocket, oppoUdpPort, oldSel, UPD_CONTROL_PORT, jsonHandler, playerGraph);
-	}
-	
-	public MatchHandler(String usr, String oppo, SocketChannel challengerSocket, 
-			SocketChannel challengedSocket, int oppoUdpPort, Selector oldSel, int serverUdpPort, JsonHandler jsonHandler,
 			PlayerGraph playerGraph) {
 		if(usr == null || challengerSocket == null || challengedSocket == null || 
 				oldSel == null || jsonHandler == null || playerGraph == null)
 			throw new NullPointerException();
-		if(usr.isEmpty() || oppoUdpPort < 0 || serverUdpPort < 0)
+		if(usr.isEmpty() || oppoUdpPort < 0)
 			throw new IllegalArgumentException();
 		
 		this.challengerSocket = challengerSocket;
 		this.challengedSocket = challengedSocket;
 		this.oppoUdpPort = oppoUdpPort;
-		UPD_CONTROL_PORT = serverUdpPort;
 		this.oldSel = oldSel;
 		
 		this.usr = usr;
@@ -82,6 +71,7 @@ public class MatchHandler implements Runnable {
 		
 		// Match timeout
 		timeout = new Thread() {
+			@Override
 			public void run() {
 				try {
 					Thread.sleep(MyUtilities.MATCH_DURATION_MILLIS);
@@ -95,8 +85,8 @@ public class MatchHandler implements Runnable {
 		
 		// Used to send the challenge request
 		try {
-			serverUdpSocket = new DatagramSocket(UPD_CONTROL_PORT);
-			serverUdpSocket.setSoTimeout(TIMEOUT);
+			serverUdpSocket = new DatagramSocket();
+			serverUdpSocket.setSoTimeout(MyUtilities.TIMEOUT);
 			sel = Selector.open();
 		} catch (IOException ioe) {
 			String rsp = jsonHandler.toJson(Collections.singletonMap(MyUtilities.SERVER_ERROR_CODE, MyUtilities.SETUP_MATCH));
@@ -259,6 +249,9 @@ public class MatchHandler implements Runnable {
 	
 	// check if the translation sent by the client is correct
 	private boolean correctTranslation(String translatedWord, LinkedList<String>[] words, int index) {
+		if(translatedWord == null)
+			return false;
+		
 		for(int i = 1; i < words[index].size(); i++)
 			if(translatedWord.equals(words[index].get(i)))
 				return true;
@@ -321,13 +314,13 @@ public class MatchHandler implements Runnable {
 				
 				if(byteBuffers[1].position() == length) {
 					byteBuffers[1].flip();
-					// TODO (?)
 					Map<String, String> translationMap = 
 							jsonHandler.fromJson(new String(byteBuffers[1].array()).trim());
-					String translation = translationMap.get(MyUtilities.TRANSLATION);
+					
+					// It shouldn't be able to happen, but if the translation is null it returns false to the correctness check
 					
 					if(sock.equals(challengerSocket)) {
-						if(correctTranslation(translation, words, challengerIndex))
+						if(correctTranslation(translationMap.get(MyUtilities.TRANSLATION), words, challengerIndex))
 							challengerScore += 2;
 						else
 							challengerScore -= 1;
@@ -338,7 +331,7 @@ public class MatchHandler implements Runnable {
 							challengerSocket.register(sel, 0);			// No left to do
 					}
 					else {
-						if(correctTranslation(translation, words, challengedIndex))
+						if(correctTranslation(translationMap.get(MyUtilities.TRANSLATION), words, challengedIndex))
 							challengedScore += 2;
 						else
 							challengedScore -= 1;
@@ -408,16 +401,20 @@ public class MatchHandler implements Runnable {
 				challengerSocket.write(length);
 			while(resBuf.hasRemaining())
 				challengerSocket.write(resBuf);
-			
+		} catch (IOException ioe) {
+			ErrorMacro.softIoExceptionHandling(ioe);
+		} finally {
 			length.rewind();
 			resBuf.rewind();
 			
+			try {
 			while(length.hasRemaining())
 				challengedSocket.write(length);
 			while(resBuf.hasRemaining())
 				challengedSocket.write(resBuf);
-		} catch (IOException ioe) {
-			ErrorMacro.softIoExceptionHandling(ioe);
+			} catch (IOException ioee) {
+				ErrorMacro.softIoExceptionHandling(ioee);
+			}
 		}
 	}
 	
@@ -425,9 +422,7 @@ public class MatchHandler implements Runnable {
 	public void run() {
 		// Preparation of the challenge request
 		String matchStr = jsonHandler.toJson(Collections.singletonMap(MyUtilities.MATCH, MyUtilities.MATCH_REQUEST_FROM + usr));
-		byte[] buf = new byte[BYTE_ARRAY_SIZE];
-		buf = matchStr.getBytes();
-		DatagramPacket challengeRequest = new DatagramPacket(buf, buf.length, InetAddress.getLoopbackAddress(), oppoUdpPort);
+		DatagramPacket challengeRequest = new DatagramPacket(matchStr.getBytes(), matchStr.length(), InetAddress.getLoopbackAddress(), oppoUdpPort);
 		
 		// send the challenge request
 		try {
@@ -435,18 +430,22 @@ public class MatchHandler implements Runnable {
 			if(!sendWaitForAccADV())					// Match set up successful
 				return;
 			
-			byte[] bufResponse = new byte[BYTE_ARRAY_SIZE];
+			byte[] bufResponse = new byte[MyUtilities.BYTE_ARRAY_SIZE];
 			DatagramPacket responseChallenge = new DatagramPacket(bufResponse, bufResponse.length);
 			serverUdpSocket.receive(responseChallenge);
 			
-			String challengedResponse = new String(responseChallenge.getData());
-			if(!sendChallengeResponse(challengedResponse))
+			String challengedResponse = new String(responseChallenge.getData()).trim();
+			if(!sendChallengeResponse(challengedResponse)) {
+				if(MyUtilities.MATCH_ACCEPTED.equals(jsonHandler.fromJson(challengedResponse).get(MyUtilities.MATCH)))
+					exitMatchProcedure(challengedSocket);
 				return;
+			}
 			
-			if(challengedResponse.contains(MyUtilities.MATCH_REFUSED)) {
+			if(!MyUtilities.MATCH_ACCEPTED.equals(jsonHandler.fromJson(challengedResponse).get(MyUtilities.MATCH))) {
 				exitMatchProcedureREAD();
 				return;
 			}
+			
 		} catch (SocketTimeoutException ste) {
 			String rsp = jsonHandler.toJson(Collections.singletonMap(MyUtilities.RETRY_WITH_CODE, MyUtilities.MATCH_NO_RESPONSE));
 			ErrorMacro.matchSocketTimeoutExceptionReq(challengerSocket, oldSel, rsp, sel, serverUdpSocket);
@@ -465,6 +464,10 @@ public class MatchHandler implements Runnable {
 		try {
 			challengedSocket.register(oldSel, 0);
 			words = translHandler.getWords();
+			
+			for(int i = 0; i < words.length; i++)		// See the results
+				System.out.println(words[i]);
+				
 		} catch (ClosedChannelException cce) {		// Handled as an IOException for convenience
 			String rsp = jsonHandler.toJson(Collections.singletonMap(MyUtilities.SERVER_ERROR_CODE, MyUtilities.OPP_ERR));
 			ErrorMacro.matchIoExceptionHandlingPAIR(cce, challengerSocket, challengedSocket, oldSel, rsp, sel, serverUdpSocket);
@@ -521,6 +524,11 @@ public class MatchHandler implements Runnable {
 			ErrorMacro.matchIoExceptionHandlingPAIR(ioe, challengerSocket, challengedSocket, oldSel, rsp, sel, serverUdpSocket);
 			return;
 		} 
+		
+		if(challengerScore > challengedScore)
+			challengerScore += 3;
+		else if(challengerScore < challengedScore)
+			challengedScore += 3;
 		
 		try {
 			playerGraph.updateScore(usr, challengerScore);

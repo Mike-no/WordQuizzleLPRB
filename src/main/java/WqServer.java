@@ -375,7 +375,7 @@ public class WqServer {
 			if(!playerGraph.isOnline(rqstValue))
 				return jsonHandler.toJson(Collections.singletonMap(MyUtilities.CLIENT_ERROR_CODE, MyUtilities.OFFLINE_USR));
 			
-			return clientLst.clientLst(playerGraph.getAdjacencyList(rqstValue));
+			return jsonHandler.toJson(Collections.singletonMap(MyUtilities.SUCCESS_CODE, clientLst.clientLst(playerGraph.getAdjacencyList(rqstValue))));
 		} catch (NotExistingUsrException e) {
 			return jsonHandler.toJson(Collections.singletonMap(MyUtilities.CLIENT_ERROR_CODE, MyUtilities.NOT_EXISTING_USR));
 		}
@@ -454,16 +454,16 @@ public class WqServer {
 			LinkedList<Player> tmpLst = playerGraph.getRankingList(rqstValue);
 			Collections.sort(tmpLst, new Comparator<Player>() {
 				public int compare(Player p1, Player p2) {
-					if(p1.getScore() > p2.getScore())
+					if(p1.getScore() < p2.getScore())
 						return 1;
-					else if(p1.getScore() < p2.getScore())
+					else if(p1.getScore() > p2.getScore())
 						return -1;
 					else 
 						return 0;
 				}
 			});
 			
-			return clientLst.clientLst(tmpLst);
+			return jsonHandler.toJson(Collections.singletonMap(MyUtilities.SUCCESS_CODE, clientLst.clientLst(tmpLst)));
 		} catch (NotExistingUsrException e) {
 			return jsonHandler.toJson(Collections.singletonMap(MyUtilities.CLIENT_ERROR_CODE, MyUtilities.NOT_EXISTING_USR));
 		}
@@ -554,6 +554,9 @@ public class WqServer {
 						String response = handleShowRanking(request.get(MyUtilities.SHOW_RANKING));
 						setResponse(dataSocket, response);
 					}
+					/** If client logic works well this event should not happen; in case it happens, 
+					 * it is stopped without returning errors of any kind to the client
+					 */
 					else if(request.containsKey(MyUtilities.TRANSLATION)) {
 						ByteBuffer lengthT = ByteBuffer.allocate(Integer.BYTES);
 						ByteBuffer requestT = ByteBuffer.allocate(MyUtilities.BUFFER_SIZE);
@@ -617,7 +620,7 @@ public class WqServer {
 		WqServer wqServer = new WqServer();
 		
 		System.out.println("RMI Sign up service online on port " + MyUtilities.SIGN_UP_PORT);
-		System.out.println("WQ Server online on port " + MyUtilities.TCP_CONTROL_PORT + "\n");
+		System.out.println("WQ Server online on port " + MyUtilities.TCP_CONTROL_PORT + System.lineSeparator());
 		
 		wqServer.runWqService();
 	}

@@ -15,7 +15,7 @@ import java.nio.channels.SocketChannel;
  * between the users themselves.
  */
 public class Player {
-	// Username and password, the username is unique, the password will be hashed 
+	// Username and password, the username is unique
 	private String username;
 	private String psw;
 	
@@ -77,7 +77,7 @@ public class Player {
 		return username;
 	}
 	
-	// Get the hashed password of the player
+	// Get the password of the player
 	public String getPsw() {
 		return psw;
 	}

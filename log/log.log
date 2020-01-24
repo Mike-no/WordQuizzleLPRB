@@ -1,0 +1,646 @@
+RMI Sign up service online on port 8080
+WQ Server online on port 9999
+
+New Player connected : /127.0.0.1:54235
+Current number of connections : 1
+Login request received from /127.0.0.1:54235
+Friend list request received from /127.0.0.1:54235
+New Player connected : /127.0.0.1:54238
+Current number of connections : 2
+Login request received from /127.0.0.1:54238
+Friend list request received from /127.0.0.1:54238
+Match request received from /127.0.0.1:54235
+https://api.mymemory.translated.net/get?q=gridare&langpair=it|en
+https://api.mymemory.translated.net/get?q=pericoloso&langpair=it|en
+https://api.mymemory.translated.net/get?q=coscienza&langpair=it|en
+https://api.mymemory.translated.net/get?q=spalla&langpair=it|en
+https://api.mymemory.translated.net/get?q=fuggire&langpair=it|en
+https://api.mymemory.translated.net/get?q=meglio&langpair=it|en
+https://api.mymemory.translated.net/get?q=successo&langpair=it|en
+https://api.mymemory.translated.net/get?q=nave&langpair=it|en
+https://api.mymemory.translated.net/get?q=mettere&langpair=it|en
+https://api.mymemory.translated.net/get?q=sorridere&langpair=it|en
+[gridare, i shout, shouting, do not shout.]
+[pericoloso, dangerous, dangerous pericoloso, hazardous]
+[coscienza, environmental, consciousness., conscious]
+[spalla, shoulder, fore leg, jamb]
+[fuggire, break on through, during battle, the tides may turn against you. if this happens, you can run away by tapping the flee button in the top right corner. doing so ends a battle early, but it will also cause you to lose all items, rewards, and progress in that battle. you'll also lose your encounter energy used to start the fight., i have to escape! "]
+[meglio, with the situation, better, nicest.]
+[successo, success, happened., successs]
+[nave, ship, vessel, by sea]
+[mettere, put, mexican train dominoes gold is a competition betwe [...], to implement]
+[sorridere, smile, smiling., laughing.]
+Match request received from /127.0.0.1:54235
+https://api.mymemory.translated.net/get?q=punta&langpair=it|en
+https://api.mymemory.translated.net/get?q=ora&langpair=it|en
+https://api.mymemory.translated.net/get?q=verso&langpair=it|en
+https://api.mymemory.translated.net/get?q=l%C3%AC&langpair=it|en
+https://api.mymemory.translated.net/get?q=servire&langpair=it|en
+https://api.mymemory.translated.net/get?q=umano&langpair=it|en
+https://api.mymemory.translated.net/get?q=notizia&langpair=it|en
+https://api.mymemory.translated.net/get?q=lungo&langpair=it|en
+https://api.mymemory.translated.net/get?q=valere&langpair=it|en
+https://api.mymemory.translated.net/get?q=famiglia&langpair=it|en
+[punta, tip, punta, pointed tip]
+[ora, time, hr]
+[verso, sense, unto, front]
+[lì, date:, graduate from, on ________________]
+[servire, serve, serving., serve]
+[umano, in the center, human, human eye.]
+[notizia, news, notizia:]
+[lungo, long, last, lungo]
+[valere, be worth]
+[famiglia, family., familytext]
+Match request received from /127.0.0.1:54235
+https://api.mymemory.translated.net/get?q=procedere&langpair=it|en
+https://api.mymemory.translated.net/get?q=dormire&langpair=it|en
+https://api.mymemory.translated.net/get?q=diffondere&langpair=it|en
+https://api.mymemory.translated.net/get?q=commercio&langpair=it|en
+https://api.mymemory.translated.net/get?q=fuori&langpair=it|en
+https://api.mymemory.translated.net/get?q=avvenire&langpair=it|en
+https://api.mymemory.translated.net/get?q=facile&langpair=it|en
+https://api.mymemory.translated.net/get?q=caff%C3%A8&langpair=it|en
+https://api.mymemory.translated.net/get?q=palazzo&langpair=it|en
+https://api.mymemory.translated.net/get?q=improvviso&langpair=it|en
+[procedere, proceed, how to proceed, to proceed]
+[dormire, sleeping, sleep, accommodation]
+[diffondere, i disseminate, want to diffuse, information]
+[commercio, trade, business, trading]
+[fuori, outside, excluded, outward]
+[avvenire, future, avvenire, questa?]
+[facile, easy, quite difficult, easily]
+[caffè, coffee, arabian coffee, espresso]
+[palazzo, palace, mansion, apartment building]
+[improvviso, sudden, thunderclap, i talk ad lib.]
+Match request received from /127.0.0.1:54235
+https://api.mymemory.translated.net/get?q=seguito&langpair=it|en
+https://api.mymemory.translated.net/get?q=industriale&langpair=it|en
+https://api.mymemory.translated.net/get?q=albergo&langpair=it|en
+https://api.mymemory.translated.net/get?q=egli&langpair=it|en
+https://api.mymemory.translated.net/get?q=grande&langpair=it|en
+https://api.mymemory.translated.net/get?q=li&langpair=it|en
+https://api.mymemory.translated.net/get?q=stella&langpair=it|en
+https://api.mymemory.translated.net/get?q=infatti&langpair=it|en
+https://api.mymemory.translated.net/get?q=privato&langpair=it|en
+https://api.mymemory.translated.net/get?q=numeroso&langpair=it|en
+[seguito, following, sequel, continued]
+[industriale, industrial, processing methods., initiative.]
+[albergo, hotel, payment on delivery, hotels]
+[egli, he, he got no further., his first...]
+[grande, big, grand, big size]
+[li, circumstances, po, 0]
+[stella, star, star-shaped, stella..]
+[infatti, in fact,, infact, i said.]
+[privato, private lessons, law, individual]
+[numeroso, numerous, large mob]
+Match request received from /127.0.0.1:54235
+https://api.mymemory.translated.net/get?q=lontano&langpair=it|en
+https://api.mymemory.translated.net/get?q=dedicare&langpair=it|en
+https://api.mymemory.translated.net/get?q=solo&langpair=it|en
+https://api.mymemory.translated.net/get?q=esperienza&langpair=it|en
+https://api.mymemory.translated.net/get?q=sostenere&langpair=it|en
+https://api.mymemory.translated.net/get?q=costringere&langpair=it|en
+https://api.mymemory.translated.net/get?q=chiaro&langpair=it|en
+https://api.mymemory.translated.net/get?q=concludere&langpair=it|en
+https://api.mymemory.translated.net/get?q=grosso&langpair=it|en
+https://api.mymemory.translated.net/get?q=accordo&langpair=it|en
+[lontano, far, loin, distant.]
+[dedicare, i devote, dedicare, how dedicare began]
+[solo, only, achieved, solo]
+[esperienza, experience, subjective, our experience]
+[sostenere, supporting, i support, win.]
+[costringere, force, you can’t make me!, not to enchain or constrict.]
+[chiaro, brown, light, fair]
+[concludere, cancella, be concluded., conclusion]
+[grosso, thick, large, movie.]
+[accordo, agree, agreement, agreed]
+Match request received from /127.0.0.1:54235
+https://api.mymemory.translated.net/get?q=cosa&langpair=it|en
+https://api.mymemory.translated.net/get?q=questo&langpair=it|en
+https://api.mymemory.translated.net/get?q=ricordo&langpair=it|en
+https://api.mymemory.translated.net/get?q=sacro&langpair=it|en
+https://api.mymemory.translated.net/get?q=caff%C3%A8&langpair=it|en
+https://api.mymemory.translated.net/get?q=costa&langpair=it|en
+https://api.mymemory.translated.net/get?q=presente&langpair=it|en
+https://api.mymemory.translated.net/get?q=riprendere&langpair=it|en
+https://api.mymemory.translated.net/get?q=puro&langpair=it|en
+https://api.mymemory.translated.net/get?q=coscienza&langpair=it|en
+[cosa, what, thing]
+[questo, this, to do this., that]
+[ricordo, recollection, remember that,, memory]
+[sacro, holy, saker falcon, sacred]
+[caffè, coffee, arabian coffee, espresso]
+[costa, costa, coast., coastal]
+[presente, this, is present, mode]
+[riprendere, resume, you resume, resume speaking]
+[puro, pure, world., neat]
+[coscienza, environmental, consciousness., conscious]
+Match request received from /127.0.0.1:54235
+https://api.mymemory.translated.net/get?q=sangue&langpair=it|en
+https://api.mymemory.translated.net/get?q=prima&langpair=it|en
+https://api.mymemory.translated.net/get?q=regno&langpair=it|en
+https://api.mymemory.translated.net/get?q=partire&langpair=it|en
+https://api.mymemory.translated.net/get?q=o&langpair=it|en
+https://api.mymemory.translated.net/get?q=errore&langpair=it|en
+https://api.mymemory.translated.net/get?q=passo&langpair=it|en
+https://api.mymemory.translated.net/get?q=gatto&langpair=it|en
+https://api.mymemory.translated.net/get?q=alto&langpair=it|en
+https://api.mymemory.translated.net/get?q=lavoro&langpair=it|en
+[sangue, blood, hyperinsulinaemia, our blood.]
+[prima, before, first, flow before]
+[regno, kingdom, realm, monarchy]
+[partire, blast-off, leaving, go––––”]
+[o, o, hour]
+[errore, error, polls, fault]
+[passo, step, rate, phase]
+[gatto, cat, cause, cats:]
+[alto, high, tall, this side up]
+[lavoro, job, work  lavorare]
+Match request received from /127.0.0.1:54235
+https://api.mymemory.translated.net/get?q=signore&langpair=it|en
+https://api.mymemory.translated.net/get?q=luna&langpair=it|en
+https://api.mymemory.translated.net/get?q=minore&langpair=it|en
+https://api.mymemory.translated.net/get?q=atto&langpair=it|en
+https://api.mymemory.translated.net/get?q=giro&langpair=it|en
+https://api.mymemory.translated.net/get?q=dubbio&langpair=it|en
+https://api.mymemory.translated.net/get?q=neanche&langpair=it|en
+https://api.mymemory.translated.net/get?q=migliore&langpair=it|en
+https://api.mymemory.translated.net/get?q=voi&langpair=it|en
+https://api.mymemory.translated.net/get?q=comodo&langpair=it|en
+[signore, ladies, sir, mister]
+[luna, moon, moon  luna, luna.]
+[minore, minor, lowest, younger]
+[atto, record, act,, atto]
+[giro, tour, round, around.]
+[dubbio, doubt, doubtful, uncertain]
+[neanche, not even/neither, not even, no.]
+[migliore, better, best, top]
+[voi, you, you start, set aside.]
+[comodo, comfortable, convenienti, convenient]
+Match request received from /127.0.0.1:54235
+https://api.mymemory.translated.net/get?q=indietro&langpair=it|en
+https://api.mymemory.translated.net/get?q=accogliere&langpair=it|en
+https://api.mymemory.translated.net/get?q=tono&langpair=it|en
+https://api.mymemory.translated.net/get?q=mattina&langpair=it|en
+https://api.mymemory.translated.net/get?q=uscire&langpair=it|en
+https://api.mymemory.translated.net/get?q=mondo&langpair=it|en
+https://api.mymemory.translated.net/get?q=occasione&langpair=it|en
+https://api.mymemory.translated.net/get?q=gettare&langpair=it|en
+https://api.mymemory.translated.net/get?q=oramai&langpair=it|en
+https://api.mymemory.translated.net/get?q=desiderare&langpair=it|en
+[indietro, back, return, zoom indietro]
+[accogliere, welcome, . . ., enjoy a friendly welcome]
+[tono, tonus, tono, toning]
+[mattina, morning, am]
+[uscire, go out, get out, sign out]
+[mondo, smart, oval track in the world., the world]
+[occasione, occasion, deal, reduced]
+[gettare, glossary, throw, casting]
+[oramai, now, that i am sorry., he was there by now.]
+[desiderare, wish, wishing., to look forward to]
+Match request received from /127.0.0.1:54235
+https://api.mymemory.translated.net/get?q=riuscire&langpair=it|en
+https://api.mymemory.translated.net/get?q=istante&langpair=it|en
+https://api.mymemory.translated.net/get?q=abitare&langpair=it|en
+https://api.mymemory.translated.net/get?q=conseguenza&langpair=it|en
+https://api.mymemory.translated.net/get?q=altro&langpair=it|en
+https://api.mymemory.translated.net/get?q=spingere&langpair=it|en
+https://api.mymemory.translated.net/get?q=arrestare&langpair=it|en
+https://api.mymemory.translated.net/get?q=davvero&langpair=it|en
+https://api.mymemory.translated.net/get?q=fantasia&langpair=it|en
+https://api.mymemory.translated.net/get?q=avvertire&langpair=it|en
+[riuscire, succeed, manage, to success.]
+[istante, that is applyig., time;, petitioner,]
+[abitare, living, abitare]
+[conseguenza, effect, as, klim impact]
+[altro, other, more]
+[spingere, pushing, i|snd, push in]
+[arrestare, i arrest, stop, "arrested?]
+[davvero, really, like really,, get real.]
+[fantasia, print pattern, name, fantasia]
+[avvertire, alert,to, warn ll), warning customers]
+Match request received from /127.0.0.1:54235
+https://api.mymemory.translated.net/get?q=comprare&langpair=it|en
+https://api.mymemory.translated.net/get?q=appartenere&langpair=it|en
+https://api.mymemory.translated.net/get?q=lato&langpair=it|en
+https://api.mymemory.translated.net/get?q=scienza&langpair=it|en
+https://api.mymemory.translated.net/get?q=mettere&langpair=it|en
+https://api.mymemory.translated.net/get?q=caldo&langpair=it|en
+https://api.mymemory.translated.net/get?q=matrimonio&langpair=it|en
+https://api.mymemory.translated.net/get?q=origine&langpair=it|en
+https://api.mymemory.translated.net/get?q=gi%C3%A0&langpair=it|en
+https://api.mymemory.translated.net/get?q=probabilmente&langpair=it|en
+[comprare, buy, to buy, how to buy]
+[appartenere, belong, to belong, to truly belong]
+[lato, side, lato, select a side]
+[scienza, science, scienza,, sciences]
+[mettere, put, mexican train dominoes gold is a competition betwe [...], to implement]
+[caldo, hot, warm  caldo, calcium]
+[matrimonio, wedding, previous, breakfast.]
+[origine, origin, origin||reservation, originating]
+[già, already, yeah]
+[probabilmente, maybe, you'll probably, that’s probably it.]
+Match request received from /127.0.0.1:54235
+https://api.mymemory.translated.net/get?q=stupido&langpair=it|en
+https://api.mymemory.translated.net/get?q=sottile&langpair=it|en
+https://api.mymemory.translated.net/get?q=convincere&langpair=it|en
+https://api.mymemory.translated.net/get?q=grazie&langpair=it|en
+https://api.mymemory.translated.net/get?q=meglio&langpair=it|en
+https://api.mymemory.translated.net/get?q=eccetera&langpair=it|en
+https://api.mymemory.translated.net/get?q=ritorno&langpair=it|en
+https://api.mymemory.translated.net/get?q=oro&langpair=it|en
+https://api.mymemory.translated.net/get?q=escludere&langpair=it|en
+https://api.mymemory.translated.net/get?q=dunque&langpair=it|en
+[stupido, stupid, thick head, you dumbass!]
+[sottile, thin, cytology, "light";]
+[convincere, be convinced, to convince, to convince]
+[grazie, thank you, you, thank you for signing up. we need to verify your email address. please check your inbox.]
+[meglio, with the situation, better, nicest.]
+[eccetera, etcetera., etc. etc., and more.]
+[ritorno, line, backtracking, way-back]
+[oro, gold, oro, golden brown]
+[escludere, i exclude, rule out, exclude i]
+[dunque, then, so, let's say,]
+Match request received from /127.0.0.1:54235
+https://api.mymemory.translated.net/get?q=campagna&langpair=it|en
+https://api.mymemory.translated.net/get?q=mezzo&langpair=it|en
+https://api.mymemory.translated.net/get?q=calcio&langpair=it|en
+https://api.mymemory.translated.net/get?q=anche&langpair=it|en
+https://api.mymemory.translated.net/get?q=politico&langpair=it|en
+https://api.mymemory.translated.net/get?q=succedere&langpair=it|en
+https://api.mymemory.translated.net/get?q=pagare&langpair=it|en
+https://api.mymemory.translated.net/get?q=avvenire&langpair=it|en
+https://api.mymemory.translated.net/get?q=stupido&langpair=it|en
+https://api.mymemory.translated.net/get?q=meno&langpair=it|en
+[campagna, campaign, countryside   campagna, terroir]
+[mezzo, the, half (past, truck code]
+[calcio, football, soccer, calcio]
+[anche, also, the other, even if]
+[politico, political, politician, politico’’.]
+[succedere, happen, happen, `it can.']
+[pagare, paghare, - to pay, pay outs]
+[avvenire, future, avvenire, questa?]
+[stupido, stupid, thick head, you dumbass!]
+[meno, fewer, meno, main]
+Match request received from /127.0.0.1:54235
+https://api.mymemory.translated.net/get?q=erba&langpair=it|en
+https://api.mymemory.translated.net/get?q=enorme&langpair=it|en
+https://api.mymemory.translated.net/get?q=lingua&langpair=it|en
+https://api.mymemory.translated.net/get?q=ponte&langpair=it|en
+https://api.mymemory.translated.net/get?q=testa&langpair=it|en
+https://api.mymemory.translated.net/get?q=perci%C3%B2&langpair=it|en
+https://api.mymemory.translated.net/get?q=anima&langpair=it|en
+https://api.mymemory.translated.net/get?q=frase&langpair=it|en
+https://api.mymemory.translated.net/get?q=noto&langpair=it|en
+https://api.mymemory.translated.net/get?q=limite&langpair=it|en
+[erba, grass, grass  erba, erba]
+[enorme, huge, big cat., he was huge!]
+[lingua, language, lang]
+[ponte, deck, bridge, brain, pons]
+[testa, head, circumference, attachment point]
+[perciò, thence., hence:]
+[anima, soul, main rope core, mandrel]
+[frase, phrase, quote, match phrase]
+[noto, note, noto, noted]
+[limite, limit, limit value, ?limit]
+Match request received from /127.0.0.1:54235
+https://api.mymemory.translated.net/get?q=sicuro&langpair=it|en
+https://api.mymemory.translated.net/get?q=causa&langpair=it|en
+https://api.mymemory.translated.net/get?q=comprare&langpair=it|en
+https://api.mymemory.translated.net/get?q=meglio&langpair=it|en
+https://api.mymemory.translated.net/get?q=signore&langpair=it|en
+https://api.mymemory.translated.net/get?q=pelle&langpair=it|en
+https://api.mymemory.translated.net/get?q=natura&langpair=it|en
+https://api.mymemory.translated.net/get?q=conto&langpair=it|en
+https://api.mymemory.translated.net/get?q=storico&langpair=it|en
+https://api.mymemory.translated.net/get?q=colore&langpair=it|en
+[sicuro, safe, confident, free of unsafe]
+[causa, cause, causing, couse:]
+[comprare, buy, to buy, how to buy]
+[meglio, with the situation, better, nicest.]
+[signore, ladies, sir, mister]
+[pelle, leather, healthv, pelle.]
+[natura, type, to the environment., materials]
+[conto, the capital, bill, conta]
+[storico, historic, historical report, history]
+[colore, colour, color, different]
+Match request received from /127.0.0.1:54235
+https://api.mymemory.translated.net/get?q=coraggio&langpair=it|en
+https://api.mymemory.translated.net/get?q=molto&langpair=it|en
+https://api.mymemory.translated.net/get?q=argomento&langpair=it|en
+https://api.mymemory.translated.net/get?q=basso&langpair=it|en
+https://api.mymemory.translated.net/get?q=pensare&langpair=it|en
+https://api.mymemory.translated.net/get?q=scusare&langpair=it|en
+https://api.mymemory.translated.net/get?q=sicuro&langpair=it|en
+https://api.mymemory.translated.net/get?q=toccare&langpair=it|en
+https://api.mymemory.translated.net/get?q=salutare&langpair=it|en
+https://api.mymemory.translated.net/get?q=perfetto&langpair=it|en
+[coraggio, courage, bravery, have courage]
+[molto, very, to be very, a lot.]
+[argomento, topic, topics, subject]
+[basso, low, short, bass guitar]
+[pensare, think, worry about., thinking]
+[scusare, pardon, justify, do forgive me.]
+[sicuro, safe, confident, free of unsafe]
+[toccare, touching., this is done gently, with a light touch., touch]
+[salutare, i welcome, healthy, just health]
+[perfetto, perfect, gorgeous, cherished]
+Match request received from /127.0.0.1:54235
+https://api.mymemory.translated.net/get?q=resto&langpair=it|en
+https://api.mymemory.translated.net/get?q=un&langpair=it|en
+https://api.mymemory.translated.net/get?q=minimo&langpair=it|en
+https://api.mymemory.translated.net/get?q=istituto&langpair=it|en
+https://api.mymemory.translated.net/get?q=sacro&langpair=it|en
+https://api.mymemory.translated.net/get?q=cittadino&langpair=it|en
+https://api.mymemory.translated.net/get?q=poesia&langpair=it|en
+https://api.mymemory.translated.net/get?q=porta&langpair=it|en
+https://api.mymemory.translated.net/get?q=gamba&langpair=it|en
+https://api.mymemory.translated.net/get?q=centrale&langpair=it|en
+[resto, remains, rest, change]
+[un, a, un., another]
+[minimo, minimum, min, idling]
+[istituto, institute, school, the institute of]
+[sacro, holy, saker falcon, sacred]
+[cittadino, citizen, urban dude, "national" means:]
+[poesia, poetry, poem, poetry works]
+[porta, door, port, self-closing]
+[gamba, leg, whole leg]
+[centrale, twists, main, power plant]
+Match request received from /127.0.0.1:54235
+https://api.mymemory.translated.net/get?q=acqua&langpair=it|en
+https://api.mymemory.translated.net/get?q=appoggiare&langpair=it|en
+https://api.mymemory.translated.net/get?q=uccidere&langpair=it|en
+https://api.mymemory.translated.net/get?q=allontanare&langpair=it|en
+https://api.mymemory.translated.net/get?q=misura&langpair=it|en
+https://api.mymemory.translated.net/get?q=vi&langpair=it|en
+https://api.mymemory.translated.net/get?q=dimostrare&langpair=it|en
+https://api.mymemory.translated.net/get?q=prossimo&langpair=it|en
+https://api.mymemory.translated.net/get?q=stanza&langpair=it|en
+https://api.mymemory.translated.net/get?q=vedere&langpair=it|en
+[acqua, water, mixable, tarjama]
+[appoggiare, back up, however, to support his ...., place on the floor.]
+[uccidere, kill, i kill, non uccidere]
+[allontanare, remove, cancel, do not flee.]
+[misura, of measure, size, point]
+[vi, vi, e r, you]
+[dimostrare, bear witness, to demonstrate, demonstrate?]
+[prossimo, next, next post, neighbor?"]
+[stanza, stanza, sleeping-area, ng	thi chamber.]
+[vedere, see, view ..., templates_btn_view]
+Match request received from /127.0.0.1:54235
+https://api.mymemory.translated.net/get?q=divenire&langpair=it|en
+https://api.mymemory.translated.net/get?q=stampa&langpair=it|en
+https://api.mymemory.translated.net/get?q=villa&langpair=it|en
+https://api.mymemory.translated.net/get?q=male&langpair=it|en
+https://api.mymemory.translated.net/get?q=vino&langpair=it|en
+https://api.mymemory.translated.net/get?q=ferro&langpair=it|en
+https://api.mymemory.translated.net/get?q=sorella&langpair=it|en
+https://api.mymemory.translated.net/get?q=sud&langpair=it|en
+https://api.mymemory.translated.net/get?q=accogliere&langpair=it|en
+https://api.mymemory.translated.net/get?q=grosso&langpair=it|en
+[divenire, you are, process of becoming., to become?]
+[stampa, print, press_release, editorials]
+[villa, villa, house, villas]
+[male, bad, console, eviliii, xix, chapter]
+[vino, wine, colli euganei, vino]
+[ferro, iron, metal rod, iron measurement, nos]
+[sorella, sister, brother, and sister?]
+[sud, south  sud, sud, the south]
+[accogliere, welcome, . . ., enjoy a friendly welcome]
+[grosso, thick, large, movie.]
+Match request received from /127.0.0.1:54235
+https://api.mymemory.translated.net/get?q=particolare&langpair=it|en
+https://api.mymemory.translated.net/get?q=fondo&langpair=it|en
+https://api.mymemory.translated.net/get?q=nudo&langpair=it|en
+https://api.mymemory.translated.net/get?q=porto&langpair=it|en
+https://api.mymemory.translated.net/get?q=tardi&langpair=it|en
+https://api.mymemory.translated.net/get?q=posare&langpair=it|en
+https://api.mymemory.translated.net/get?q=paura&langpair=it|en
+https://api.mymemory.translated.net/get?q=svegliare&langpair=it|en
+https://api.mymemory.translated.net/get?q=alcuno&langpair=it|en
+https://api.mymemory.translated.net/get?q=li&langpair=it|en
+[particolare, particular, detail, :]
+[fondo, dimension, the bottom, provision]
+[nudo, unbacked, naked,, nude]
+[porto, port, harbour, delivery terms]
+[tardi, late., later, it's late]
+[posare, to drive, image 3:, (put down - suppress)]
+[paura, fear, state of fear, afraid]
+[svegliare, to wake up, you have to wake up., i have to wake amy up!]
+[alcuno, "i don't have a job., any]
+[li, circumstances, po, 0]
+Match request received from /127.0.0.1:54235
+https://api.mymemory.translated.net/get?q=festa&langpair=it|en
+https://api.mymemory.translated.net/get?q=campo&langpair=it|en
+https://api.mymemory.translated.net/get?q=spegnere&langpair=it|en
+https://api.mymemory.translated.net/get?q=caff%C3%A8&langpair=it|en
+https://api.mymemory.translated.net/get?q=zona&langpair=it|en
+https://api.mymemory.translated.net/get?q=viso&langpair=it|en
+https://api.mymemory.translated.net/get?q=lontano&langpair=it|en
+https://api.mymemory.translated.net/get?q=scuola&langpair=it|en
+https://api.mymemory.translated.net/get?q=via&langpair=it|en
+https://api.mymemory.translated.net/get?q=colpa&langpair=it|en
+[festa, festival, party, festa]
+[campo, field, field  campo, pitch]
+[spegnere, extinguish, i switch off, fire]
+[caffè, coffee, arabian coffee, espresso]
+[zona, region, zone, city]
+[viso, face, facial, viso]
+[lontano, far, loin, distant.]
+[scuola, school, education, care expenses.]
+[via, street, via, go]
+[colpa, guilt, blame, misconduct:]
+Match request received from /127.0.0.1:54238
+https://api.mymemory.translated.net/get?q=lingua&langpair=it|en
+https://api.mymemory.translated.net/get?q=passo&langpair=it|en
+https://api.mymemory.translated.net/get?q=scusare&langpair=it|en
+https://api.mymemory.translated.net/get?q=essa&langpair=it|en
+https://api.mymemory.translated.net/get?q=gi%C3%B9&langpair=it|en
+https://api.mymemory.translated.net/get?q=baciare&langpair=it|en
+https://api.mymemory.translated.net/get?q=risposta&langpair=it|en
+https://api.mymemory.translated.net/get?q=gesto&langpair=it|en
+https://api.mymemory.translated.net/get?q=semplice&langpair=it|en
+https://api.mymemory.translated.net/get?q=funzione&langpair=it|en
+[lingua, language, lang]
+[passo, step, rate, phase]
+[scusare, pardon, justify, do forgive me.]
+[essa, it., this, this latter,]
+[giù, down, search down, bottom]
+[baciare, kissing, to kiss, kissing someone]
+[risposta, response, answer, an answer.]
+[gesto, gesto, gesturing]
+[semplice, simple, straight-forward, after.]
+[funzione, function, role, position]
+Match request received from /127.0.0.1:54238
+https://api.mymemory.translated.net/get?q=muro&langpair=it|en
+https://api.mymemory.translated.net/get?q=carta&langpair=it|en
+https://api.mymemory.translated.net/get?q=nord&langpair=it|en
+https://api.mymemory.translated.net/get?q=secolo&langpair=it|en
+https://api.mymemory.translated.net/get?q=costituire&langpair=it|en
+https://api.mymemory.translated.net/get?q=istituto&langpair=it|en
+https://api.mymemory.translated.net/get?q=uccidere&langpair=it|en
+https://api.mymemory.translated.net/get?q=cambiare&langpair=it|en
+https://api.mymemory.translated.net/get?q=sicurezza&langpair=it|en
+https://api.mymemory.translated.net/get?q=corsa&langpair=it|en
+[muro, wall, muro, gallery.]
+[carta, paper, document, charter]
+[nord, north, north  nord, northern italy]
+[secolo, century, decade., corinth:]
+[costituire, incorporate, e.g., create a hindrance]
+[istituto, institute, school, the institute of]
+[uccidere, kill, i kill, non uccidere]
+[cambiare, change, alter, to change the ones i use]
+[sicurezza, signs, ure, 1x security]
+[corsa, stroke, racing, run]
+Match request received from /127.0.0.1:54238
+https://api.mymemory.translated.net/get?q=a&langpair=it|en
+https://api.mymemory.translated.net/get?q=esistere&langpair=it|en
+https://api.mymemory.translated.net/get?q=fondare&langpair=it|en
+https://api.mymemory.translated.net/get?q=attore&langpair=it|en
+https://api.mymemory.translated.net/get?q=macchina&langpair=it|en
+https://api.mymemory.translated.net/get?q=duro&langpair=it|en
+https://api.mymemory.translated.net/get?q=prendere&langpair=it|en
+https://api.mymemory.translated.net/get?q=bere&langpair=it|en
+https://api.mymemory.translated.net/get?q=riportare&langpair=it|en
+https://api.mymemory.translated.net/get?q=compagnia&langpair=it|en
+[a, a, at, the]
+[esistere, be, existence, just existing.]
+[fondare, found, establishing an website ……………………., establish new branches;]
+[attore, actor, attore, claimant]
+[macchina, guards, work., performance.]
+[duro, very firm, duro]
+[prendere, take, take a leaf, catch]
+[bere, drink, i drink, bere, botswana]
+[riportare, to carry, return, to carry over]
+[compagnia, company, companionship, airline]
+Match request received from /127.0.0.1:54238
+https://api.mymemory.translated.net/get?q=cristiano&langpair=it|en
+https://api.mymemory.translated.net/get?q=leggero&langpair=it|en
+https://api.mymemory.translated.net/get?q=russo&langpair=it|en
+https://api.mymemory.translated.net/get?q=difficolt%C3%A0&langpair=it|en
+https://api.mymemory.translated.net/get?q=qualsiasi&langpair=it|en
+https://api.mymemory.translated.net/get?q=comprare&langpair=it|en
+https://api.mymemory.translated.net/get?q=prato&langpair=it|en
+https://api.mymemory.translated.net/get?q=favore&langpair=it|en
+https://api.mymemory.translated.net/get?q=costituire&langpair=it|en
+https://api.mymemory.translated.net/get?q=abito&langpair=it|en
+[cristiano, christian, cristiano, christian event in a fascinating way”;]
+[leggero, light, leight, gentle]
+[russo, russian, russisch, russo]
+[difficoltà, difficulty, difficulties., skill level]
+[qualsiasi, any, any &amp; all, everything.]
+[comprare, buy, to buy, how to buy]
+[prato, lawn, of the lawn., prato]
+[favore, favor, in favour, favor]
+[costituire, incorporate, e.g., create a hindrance]
+[abito, frock, dress, costume]
+Show ranking request received from /127.0.0.1:54238
+Friend list request received from /127.0.0.1:54238
+Add friend request received from /127.0.0.1:54238
+Match request received from /127.0.0.1:54238
+https://api.mymemory.translated.net/get?q=principale&langpair=it|en
+https://api.mymemory.translated.net/get?q=dare&langpair=it|en
+https://api.mymemory.translated.net/get?q=soluzione&langpair=it|en
+https://api.mymemory.translated.net/get?q=su&langpair=it|en
+https://api.mymemory.translated.net/get?q=confessare&langpair=it|en
+https://api.mymemory.translated.net/get?q=quasi&langpair=it|en
+https://api.mymemory.translated.net/get?q=bisognare&langpair=it|en
+https://api.mymemory.translated.net/get?q=dove&langpair=it|en
+https://api.mymemory.translated.net/get?q=riempire&langpair=it|en
+https://api.mymemory.translated.net/get?q=mattino&langpair=it|en
+[principale, main, person, principal]
+[dare, cvs, give, debits]
+[soluzione, the solution, remedy, dielectric]
+[su, on, top, on a]
+[confessare, i confess, but it won't do, you know; you must confess and receive the sacrament.', thirdly, professing.]
+[quasi, most, hardly ever, reach…]
+[bisognare, bisognare]
+[dove, where, dove, venue details]
+[riempire, we fill, replenish, fill from]
+[mattino, morning, am, hh i t/j]
+Match request received from /127.0.0.1:54238
+https://api.mymemory.translated.net/get?q=spazio&langpair=it|en
+https://api.mymemory.translated.net/get?q=assicurare&langpair=it|en
+https://api.mymemory.translated.net/get?q=russo&langpair=it|en
+https://api.mymemory.translated.net/get?q=giallo&langpair=it|en
+https://api.mymemory.translated.net/get?q=articolo&langpair=it|en
+https://api.mymemory.translated.net/get?q=appartenere&langpair=it|en
+https://api.mymemory.translated.net/get?q=discutere&langpair=it|en
+https://api.mymemory.translated.net/get?q=entrare&langpair=it|en
+https://api.mymemory.translated.net/get?q=prodotto&langpair=it|en
+https://api.mymemory.translated.net/get?q=assicurare&langpair=it|en
+[spazio, space, space  spazio, il blog è molto interessante]
+[assicurare, i assure, secure, to ensure]
+[russo, russian, russisch, russo]
+[giallo, yellow, optical circles, giallo]
+[articolo, item, items]
+[appartenere, belong, to belong, to truly belong]
+[discutere, discuss, discuss and, to discuss whether:]
+[entrare, enter, "come in!", not enter.”]
+[prodotto, product, product = prodotto, prodotto]
+[assicurare, i assure, secure, to ensure]
+Match request received from /127.0.0.1:54238
+https://api.mymemory.translated.net/get?q=giudicare&langpair=it|en
+https://api.mymemory.translated.net/get?q=presto&langpair=it|en
+https://api.mymemory.translated.net/get?q=articolo&langpair=it|en
+https://api.mymemory.translated.net/get?q=assistere&langpair=it|en
+https://api.mymemory.translated.net/get?q=baciare&langpair=it|en
+https://api.mymemory.translated.net/get?q=serio&langpair=it|en
+https://api.mymemory.translated.net/get?q=raggiungere&langpair=it|en
+https://api.mymemory.translated.net/get?q=conseguenza&langpair=it|en
+https://api.mymemory.translated.net/get?q=pensare&langpair=it|en
+https://api.mymemory.translated.net/get?q=noi&langpair=it|en
+[giudicare, to give a decision, furniture expo, judging]
+[presto, early, thereafter, quick.]
+[articolo, item, items]
+[assistere, to provide aid, serve, to look on.]
+[baciare, kissing, to kiss, kissing someone]
+[serio, major, serious, severe]
+[raggiungere, pursue?, n, reaching.]
+[conseguenza, effect, as, klim impact]
+[pensare, think, worry about., thinking]
+[noi, us, we, ngi]
+Match request received from /127.0.0.1:54238
+https://api.mymemory.translated.net/get?q=ottenere&langpair=it|en
+https://api.mymemory.translated.net/get?q=attaccare&langpair=it|en
+https://api.mymemory.translated.net/get?q=levare&langpair=it|en
+https://api.mymemory.translated.net/get?q=domenica&langpair=it|en
+https://api.mymemory.translated.net/get?q=migliore&langpair=it|en
+https://api.mymemory.translated.net/get?q=fabbrica&langpair=it|en
+https://api.mymemory.translated.net/get?q=conoscere&langpair=it|en
+https://api.mymemory.translated.net/get?q=costituire&langpair=it|en
+https://api.mymemory.translated.net/get?q=terreno&langpair=it|en
+https://api.mymemory.translated.net/get?q=eppure&langpair=it|en
+[ottenere, solutions., to obtain:, achieve]
+[attaccare, to yoke, attack, hang up.]
+[levare, rhythm, upbeat, in rising?]
+[domenica, sunday, sun, gen_lbl_times_sunday]
+[migliore, better, best, top]
+[fabbrica, industrial plant, works, parameters.]
+[conoscere, know, to be familiar with, let's learn]
+[costituire, incorporate, e.g., create a hindrance]
+[terreno, land, site, ground]
+[eppure, and yet,, yet, yet we]
+Match request received from /127.0.0.1:54238
+https://api.mymemory.translated.net/get?q=sereno&langpair=it|en
+https://api.mymemory.translated.net/get?q=met%C3%A0&langpair=it|en
+https://api.mymemory.translated.net/get?q=vita&langpair=it|en
+https://api.mymemory.translated.net/get?q=probabilmente&langpair=it|en
+https://api.mymemory.translated.net/get?q=unico&langpair=it|en
+https://api.mymemory.translated.net/get?q=piantare&langpair=it|en
+https://api.mymemory.translated.net/get?q=francese&langpair=it|en
+https://api.mymemory.translated.net/get?q=elemento&langpair=it|en
+https://api.mymemory.translated.net/get?q=limitare&langpair=it|en
+https://api.mymemory.translated.net/get?q=attaccare&langpair=it|en
+[sereno, serene, composed, mostly sunny]
+[metà, half]
+[vita, social, level, assessment]
+[probabilmente, maybe, you'll probably, that’s probably it.]
+[unico, shareholder, environment., overall]
+[piantare, to plant, what to plant, planting roses]
+[francese, french, französisch, francese]
+[elemento, element, part, entry]
+[limitare, i limit]
+[attaccare, to yoke, attack, hang up.]
+Logout request received from /127.0.0.1:54235
+Logout request received from /127.0.0.1:54238

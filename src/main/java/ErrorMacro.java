@@ -17,6 +17,7 @@ import java.nio.channels.Selector;
 import java.nio.channels.SocketChannel;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 // Class used only to contain all the generic error messages, cannot be instantiated
 public class ErrorMacro {	
@@ -26,7 +27,7 @@ public class ErrorMacro {
 	public static final String USR_EMPTY  					= "empty arg used";
 	
 	public static final String IOEXCEPTION		 			= "An I/O error occurred; the server must be stopped";
-	public static final String SOFT_IOEXCEPTION		 		= "An I/O error occurred while closing the WQ Server";
+	public static final String SOFT_IOEXCEPTION		 		= "An I/O error occurred";
 	public static final String IOE_READ_RQST	   			= "An I/O error occurred while reading the player request";
 	public static final String IOE_WR_RESP		   			= "An I/O error occurred while writing the response to the player";
 	public static final String CLOSING_CHANNEL_IOE 			= "An I/O error occurred while closing the channel";
@@ -51,69 +52,69 @@ public class ErrorMacro {
 	private ErrorMacro() {}
 	
 	public static void ioExceptionHandling(IOException ioe) {
-		ioe.printStackTrace();
+		//ioe.printStackTrace();
 		System.err.println(IOEXCEPTION);
 		System.exit(-1);
 	}
 	
 	public static void remoteExceptionHandling(RemoteException re) {
-		re.printStackTrace();
+		//re.printStackTrace();
 		System.err.println(RMI_REMOTE_EXCEPTION_CLOSURE);
 	}
 	
 	public static void notBoundExceptionHandling(NotBoundException nbe) {
-		nbe.printStackTrace();
+		//nbe.printStackTrace();
 		System.err.println(NOT_BOUND_EXCEPTION);
 	}
 	
 	public static void InterruptedExceptionHandling(InterruptedException ie) {
-		ie.printStackTrace();
-		System.out.println(INTERRUPTED_EXCEPTION);
+		//ie.printStackTrace();
+		System.err.println(INTERRUPTED_EXCEPTION);
 	}
 	
 	public static void softIoExceptionHandling(IOException ioe) {
-		ioe.printStackTrace();
+		//ioe.printStackTrace();
 		System.err.println(SOFT_IOEXCEPTION);
 	}
 	
 	public static void rqstIoExceptionKeyHandling(IOException ioe, SelectionKey key) {
-		ioe.printStackTrace();
+		//ioe.printStackTrace();
 		key.cancel();
 		try {
 			key.channel().close();
 		} catch (IOException e) {
-			e.printStackTrace();
-			System.out.println(CLOSING_CHANNEL_IOE);
+			//e.printStackTrace();
+			System.err.println(CLOSING_CHANNEL_IOE);
 		}
-		System.out.println(IOE_READ_RQST);
+		System.err.println(IOE_READ_RQST);
 	}
 	
 	public static void respIoExceptionKeyHandling(IOException ioe, SelectionKey key) {
-		ioe.printStackTrace();
+		//ioe.printStackTrace();
 		key.cancel();
 		try {
 			key.channel().close();
 		} catch (IOException e) {
-			e.printStackTrace();
+			//e.printStackTrace();
 			System.out.println(CLOSING_CHANNEL_IOE);
 		}
-		System.out.println(IOE_WR_RESP);
+		System.err.println(IOE_WR_RESP);
 	}
 	
 	public static void malformedUrlExceptionHandling(MalformedURLException mue) {
-		mue.printStackTrace();
-		System.out.println(MALFORMED_URL_EXCEPTION);
+		//mue.printStackTrace();
+		System.err.println(MALFORMED_URL_EXCEPTION);
 		System.exit(-1);
 	}
 	
 	public static void closedChannelExceptionHandling(ClosedChannelException cce) {
-		cce.printStackTrace();
-		System.out.println(CLOSED_CHANNEL_EXCEPTION);
+		//cce.printStackTrace();
+		System.err.println(CLOSED_CHANNEL_EXCEPTION);
 	}
 
 	public static void matchSocketTimeoutExceptionReq(SocketChannel challengerSocket, Selector sel,
 			String rsp, Selector newSel, DatagramSocket udp) {
-		System.out.println(MATCH_TIME_OUT_REQ);
+		System.err.println(MATCH_TIME_OUT_REQ);
 		
 		ByteBuffer length = ByteBuffer.allocate(Integer.BYTES);
 		length.putInt(rsp.length());
@@ -140,8 +141,8 @@ public class ErrorMacro {
 	
 	public static void matchIoExceptionHandling(IOException ioe,
 			SocketChannel sock, Selector sel, String rsp, Selector newSel, DatagramSocket udp) {
-		ioe.printStackTrace();
-		System.out.println(IOEXCEPTION_MATCH);
+		//ioe.printStackTrace();
+		System.err.println(IOEXCEPTION_MATCH);
 		
 		ByteBuffer length = ByteBuffer.allocate(Integer.BYTES);
 		length.putInt(rsp.length());
@@ -169,8 +170,8 @@ public class ErrorMacro {
 	public static void matchIoExceptionHandlingPAIR(IOException ioe, 
 			SocketChannel challengerSocket, SocketChannel challengedSocket, 
 			Selector sel, String rsp, Selector newSel, DatagramSocket udp) {
-		ioe.printStackTrace();
-		System.out.println(IOEXCEPTION_MATCH);
+		//ioe.printStackTrace();
+		System.err.println(IOEXCEPTION_MATCH);
 		
 		ByteBuffer length = ByteBuffer.allocate(Integer.BYTES);
 		length.putInt(rsp.length());
@@ -204,9 +205,10 @@ public class ErrorMacro {
 		}
 	}
 	
-	public static void clientIoExceptionHandling(IOException ioe, SocketChannel sock, DatagramSocket udp, String usr) {
-		ioe.printStackTrace();
-		System.out.println(IOEXCEPTION_CLIENT_COMM);
+	public static void clientIoExceptionHandlingUDP(IOException ioe, SocketChannel sock, 
+			DatagramSocket udp, String usr, AtomicBoolean flag) {
+		//ioe.printStackTrace();
+		System.err.println(IOEXCEPTION_CLIENT_COMM);
 		
 		try {
 			if(sock != null)
@@ -215,6 +217,26 @@ public class ErrorMacro {
 				udp.close();
 			if(usr != null)
 				usr = null;
+			flag.set(false);
+		} catch (IOException ioee) {
+			softIoExceptionHandling(ioee);
+		}
+	}
+	
+	public static void clientIoExceptionHandling(IOException ioe, SocketChannel sock, 
+			DatagramSocket udp, String usr, AtomicBoolean flag, AtomicBoolean flag2) {
+		//ioe.printStackTrace();
+		System.err.println(IOEXCEPTION_CLIENT_COMM);
+		
+		try {
+			flag.set(true);
+			if(sock != null)
+				sock.close();
+			if(udp != null)
+				udp.close();
+			if(usr != null)
+				usr = null;
+			flag2.set(false);
 		} catch (IOException ioee) {
 			softIoExceptionHandling(ioee);
 		}

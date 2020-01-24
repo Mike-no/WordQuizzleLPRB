@@ -15,6 +15,7 @@ import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.net.URLEncoder;
 import java.nio.channels.Channels;
 import java.nio.channels.FileChannel;
 import java.nio.channels.ReadableByteChannel;
@@ -33,7 +34,8 @@ public class TranslationHandler {
 	private ArrayList<String> wordsLst;
 	
 	private static final String WORDS_FILE_PATH 	 = "./txt/italian_words.txt";
-	private static final String WORDS_FILE_URL		 = "https://github.com/napolux/paroleitaliane/raw/master/paroleitaliane/1000_parole_italiane_comuni.txt";
+	// My github
+	private static final String WORDS_FILE_URL		 = "https://github.com/Mike-no/txt_it_word/raw/master/italian_words.txt";
 	
 	private static final String TRANSLATION_SITE_URL = "https://api.mymemory.translated.net/get?q=";
 	private static final String LANGPAIR			 = "&langpair=it|en";
@@ -105,7 +107,10 @@ public class TranslationHandler {
 		LinkedList<String>[] retLst = (LinkedList<String>[])new LinkedList[tmpLst.size()];
 		
 		for(int i = 0; i < tmpLst.size(); i++) {
-			URL url = new URL(TRANSLATION_SITE_URL + tmpLst.get(i) + LANGPAIR);
+			URL url = new URL(TRANSLATION_SITE_URL + URLEncoder.encode(tmpLst.get(i), MyUtilities.ENCODING) + LANGPAIR);
+			
+			System.out.println(url.toExternalForm());		// Resulting link
+			
 			URLConnection urlConn = url.openConnection();
 			
 			StringBuilder jsonResponse = new StringBuilder();
@@ -124,7 +129,7 @@ public class TranslationHandler {
 			JsonArray jsonArr = jobj.get(JSON_MATCHES).getAsJsonArray();
 			for(int j = 0; j < jsonArr.size(); j++) {
 				JsonObject tmpJobj = jsonArr.get(j).getAsJsonObject();
-				retLst[i].add(tmpJobj.get(JSON_TRANSLATION).getAsString());
+				retLst[i].add(tmpJobj.get(JSON_TRANSLATION).getAsString().toLowerCase());
 			}				
 		}
 		

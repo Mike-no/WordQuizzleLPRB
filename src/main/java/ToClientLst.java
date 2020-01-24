@@ -7,16 +7,16 @@
  *
  */
 
+import java.lang.reflect.Type;
 import java.util.LinkedList;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 
 // Support class built for the sole purpose of not returning to the client a list of players containing their passwords
 public class ToClientLst {
-	private class PlayerFriends {
-		@SuppressWarnings("unused")
+	public class PlayerFriends {
 		private String username;
-		@SuppressWarnings("unused")
 		private long score;
 		
 		/**
@@ -35,9 +35,19 @@ public class ToClientLst {
 			this.username = username;
 			this.score = score;
 		}
+		
+		// Get the username
+		public String getUsr() {
+			return username;
+		}
+		
+		// Get the score of the user
+		public long getScore() {
+			return score;
+		}
 	}
 	
-	Gson gson;
+	private Gson gson;
 	
 	public ToClientLst() {
 		gson = new GsonBuilder().setPrettyPrinting().create();
@@ -69,8 +79,10 @@ public class ToClientLst {
 		if(jsonLst == null)
 			throw new NullPointerException();
 		
+		// Avoiding Type Erasure
+		Type type = new TypeToken<LinkedList<PlayerFriends>>() {}.getType();
 		@SuppressWarnings("unchecked") // Safe cast
-		LinkedList<PlayerFriends> tmp = (LinkedList<PlayerFriends>)gson.fromJson(jsonLst, LinkedList.class);
+		LinkedList<PlayerFriends> tmp = (LinkedList<PlayerFriends>)gson.fromJson(jsonLst, type);
 		return tmp;
 	}
 }
