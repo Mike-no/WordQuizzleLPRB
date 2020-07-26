@@ -1,2 +1,2 @@
 # WordQuizzleLPRB
-Computer network laboratory project 2019 - 2020
+[LPRB] Progetto di Reti e Laboratorio 2019 - 2020
